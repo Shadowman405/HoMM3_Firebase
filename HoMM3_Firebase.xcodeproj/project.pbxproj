@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFE6798528CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6798428CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift */; };
+		BFE6798728CCF5D3001B8FFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6798628CCF5D3001B8FFC /* ContentView.swift */; };
+		BFE6798928CCF5D5001B8FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE6798828CCF5D5001B8FFC /* Assets.xcassets */; };
+		BFE6798C28CCF5D5001B8FFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE6798B28CCF5D5001B8FFC /* Preview Assets.xcassets */; };
+		BFE6799628CCF5D5001B8FFC /* HoMM3_FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6799528CCF5D5001B8FFC /* HoMM3_FirebaseTests.swift */; };
+		BFE679A028CCF5D5001B8FFC /* HoMM3_FirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6799F28CCF5D5001B8FFC /* HoMM3_FirebaseUITests.swift */; };
+		BFE679A228CCF5D5001B8FFC /* HoMM3_FirebaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679A128CCF5D5001B8FFC /* HoMM3_FirebaseUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFE6799228CCF5D5001B8FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE6797928CCF5D3001B8FFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFE6798028CCF5D3001B8FFC;
+			remoteInfo = HoMM3_Firebase;
+		};
+		BFE6799C28CCF5D5001B8FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE6797928CCF5D3001B8FFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFE6798028CCF5D3001B8FFC;
+			remoteInfo = HoMM3_Firebase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFE6798128CCF5D3001B8FFC /* HoMM3_Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoMM3_Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE6798428CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoMM3_FirebaseApp.swift; sourceTree = "<group>"; };
+		BFE6798628CCF5D3001B8FFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFE6798828CCF5D5001B8FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFE6798B28CCF5D5001B8FFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFE6799128CCF5D5001B8FFC /* HoMM3_FirebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoMM3_FirebaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE6799528CCF5D5001B8FFC /* HoMM3_FirebaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoMM3_FirebaseTests.swift; sourceTree = "<group>"; };
+		BFE6799B28CCF5D5001B8FFC /* HoMM3_FirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoMM3_FirebaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE6799F28CCF5D5001B8FFC /* HoMM3_FirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoMM3_FirebaseUITests.swift; sourceTree = "<group>"; };
+		BFE679A128CCF5D5001B8FFC /* HoMM3_FirebaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoMM3_FirebaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFE6797E28CCF5D3001B8FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE6798E28CCF5D5001B8FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE6799828CCF5D5001B8FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFE6797828CCF5D3001B8FFC = {
+			isa = PBXGroup;
+			children = (
+				BFE6798328CCF5D3001B8FFC /* HoMM3_Firebase */,
+				BFE6799428CCF5D5001B8FFC /* HoMM3_FirebaseTests */,
+				BFE6799E28CCF5D5001B8FFC /* HoMM3_FirebaseUITests */,
+				BFE6798228CCF5D3001B8FFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFE6798228CCF5D3001B8FFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6798128CCF5D3001B8FFC /* HoMM3_Firebase.app */,
+				BFE6799128CCF5D5001B8FFC /* HoMM3_FirebaseTests.xctest */,
+				BFE6799B28CCF5D5001B8FFC /* HoMM3_FirebaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFE6798328CCF5D3001B8FFC /* HoMM3_Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6798428CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift */,
+				BFE6798628CCF5D3001B8FFC /* ContentView.swift */,
+				BFE6798828CCF5D5001B8FFC /* Assets.xcassets */,
+				BFE6798A28CCF5D5001B8FFC /* Preview Content */,
+			);
+			path = HoMM3_Firebase;
+			sourceTree = "<group>";
+		};
+		BFE6798A28CCF5D5001B8FFC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6798B28CCF5D5001B8FFC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFE6799428CCF5D5001B8FFC /* HoMM3_FirebaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6799528CCF5D5001B8FFC /* HoMM3_FirebaseTests.swift */,
+			);
+			path = HoMM3_FirebaseTests;
+			sourceTree = "<group>";
+		};
+		BFE6799E28CCF5D5001B8FFC /* HoMM3_FirebaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6799F28CCF5D5001B8FFC /* HoMM3_FirebaseUITests.swift */,
+				BFE679A128CCF5D5001B8FFC /* HoMM3_FirebaseUITestsLaunchTests.swift */,
+			);
+			path = HoMM3_FirebaseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFE6798028CCF5D3001B8FFC /* HoMM3_Firebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE679A528CCF5D5001B8FFC /* Build configuration list for PBXNativeTarget "HoMM3_Firebase" */;
+			buildPhases = (
+				BFE6797D28CCF5D3001B8FFC /* Sources */,
+				BFE6797E28CCF5D3001B8FFC /* Frameworks */,
+				BFE6797F28CCF5D3001B8FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoMM3_Firebase;
+			productName = HoMM3_Firebase;
+			productReference = BFE6798128CCF5D3001B8FFC /* HoMM3_Firebase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFE6799028CCF5D5001B8FFC /* HoMM3_FirebaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE679A828CCF5D5001B8FFC /* Build configuration list for PBXNativeTarget "HoMM3_FirebaseTests" */;
+			buildPhases = (
+				BFE6798D28CCF5D5001B8FFC /* Sources */,
+				BFE6798E28CCF5D5001B8FFC /* Frameworks */,
+				BFE6798F28CCF5D5001B8FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFE6799328CCF5D5001B8FFC /* PBXTargetDependency */,
+			);
+			name = HoMM3_FirebaseTests;
+			productName = HoMM3_FirebaseTests;
+			productReference = BFE6799128CCF5D5001B8FFC /* HoMM3_FirebaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFE6799A28CCF5D5001B8FFC /* HoMM3_FirebaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE679AB28CCF5D5001B8FFC /* Build configuration list for PBXNativeTarget "HoMM3_FirebaseUITests" */;
+			buildPhases = (
+				BFE6799728CCF5D5001B8FFC /* Sources */,
+				BFE6799828CCF5D5001B8FFC /* Frameworks */,
+				BFE6799928CCF5D5001B8FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFE6799D28CCF5D5001B8FFC /* PBXTargetDependency */,
+			);
+			name = HoMM3_FirebaseUITests;
+			productName = HoMM3_FirebaseUITests;
+			productReference = BFE6799B28CCF5D5001B8FFC /* HoMM3_FirebaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFE6797928CCF5D3001B8FFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BFE6798028CCF5D3001B8FFC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					BFE6799028CCF5D5001B8FFC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BFE6798028CCF5D3001B8FFC;
+					};
+					BFE6799A28CCF5D5001B8FFC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BFE6798028CCF5D3001B8FFC;
+					};
+				};
+			};
+			buildConfigurationList = BFE6797C28CCF5D3001B8FFC /* Build configuration list for PBXProject "HoMM3_Firebase" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFE6797828CCF5D3001B8FFC;
+			productRefGroup = BFE6798228CCF5D3001B8FFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFE6798028CCF5D3001B8FFC /* HoMM3_Firebase */,
+				BFE6799028CCF5D5001B8FFC /* HoMM3_FirebaseTests */,
+				BFE6799A28CCF5D5001B8FFC /* HoMM3_FirebaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFE6797F28CCF5D3001B8FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE6798C28CCF5D5001B8FFC /* Preview Assets.xcassets in Resources */,
+				BFE6798928CCF5D5001B8FFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE6798F28CCF5D5001B8FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE6799928CCF5D5001B8FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFE6797D28CCF5D3001B8FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE6798728CCF5D3001B8FFC /* ContentView.swift in Sources */,
+				BFE6798528CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE6798D28CCF5D5001B8FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE6799628CCF5D5001B8FFC /* HoMM3_FirebaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE6799728CCF5D5001B8FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE679A228CCF5D5001B8FFC /* HoMM3_FirebaseUITestsLaunchTests.swift in Sources */,
+				BFE679A028CCF5D5001B8FFC /* HoMM3_FirebaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFE6799328CCF5D5001B8FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFE6798028CCF5D3001B8FFC /* HoMM3_Firebase */;
+			targetProxy = BFE6799228CCF5D5001B8FFC /* PBXContainerItemProxy */;
+		};
+		BFE6799D28CCF5D5001B8FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFE6798028CCF5D3001B8FFC /* HoMM3_Firebase */;
+			targetProxy = BFE6799C28CCF5D5001B8FFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BFE679A328CCF5D5001B8FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFE679A428CCF5D5001B8FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFE679A628CCF5D5001B8FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HoMM3_Firebase/Preview Content\"";
+				DEVELOPMENT_TEAM = HGNXB64TGD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mmg.HoMM3-Firebase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFE679A728CCF5D5001B8FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HoMM3_Firebase/Preview Content\"";
+				DEVELOPMENT_TEAM = HGNXB64TGD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mmg.HoMM3-Firebase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFE679A928CCF5D5001B8FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGNXB64TGD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mmg.HoMM3-FirebaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoMM3_Firebase.app/HoMM3_Firebase";
+			};
+			name = Debug;
+		};
+		BFE679AA28CCF5D5001B8FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGNXB64TGD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mmg.HoMM3-FirebaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoMM3_Firebase.app/HoMM3_Firebase";
+			};
+			name = Release;
+		};
+		BFE679AC28CCF5D5001B8FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGNXB64TGD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mmg.HoMM3-FirebaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HoMM3_Firebase;
+			};
+			name = Debug;
+		};
+		BFE679AD28CCF5D5001B8FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGNXB64TGD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mmg.HoMM3-FirebaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HoMM3_Firebase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFE6797C28CCF5D3001B8FFC /* Build configuration list for PBXProject "HoMM3_Firebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE679A328CCF5D5001B8FFC /* Debug */,
+				BFE679A428CCF5D5001B8FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE679A528CCF5D5001B8FFC /* Build configuration list for PBXNativeTarget "HoMM3_Firebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE679A628CCF5D5001B8FFC /* Debug */,
+				BFE679A728CCF5D5001B8FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE679A828CCF5D5001B8FFC /* Build configuration list for PBXNativeTarget "HoMM3_FirebaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE679A928CCF5D5001B8FFC /* Debug */,
+				BFE679AA28CCF5D5001B8FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE679AB28CCF5D5001B8FFC /* Build configuration list for PBXNativeTarget "HoMM3_FirebaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE679AC28CCF5D5001B8FFC /* Debug */,
+				BFE679AD28CCF5D5001B8FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFE6797928CCF5D3001B8FFC /* Project object */;
+}
