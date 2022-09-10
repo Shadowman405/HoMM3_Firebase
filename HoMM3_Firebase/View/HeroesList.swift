@@ -14,13 +14,20 @@ struct HeroesList: View {
     var body: some View {
         NavigationView {
             List(dataManager.heroes, id: \.id) { hero in
-                HStack {
-                    Image(hero.imageName)
-                        .clipShape(Circle())
-                    Text(hero.name)
-                    Spacer()
-                    Text("Class: \(hero.heroClass)")
-                        .offset(x: -20)
+                ZStack {
+                    HStack {
+                        Image(hero.imageName)
+                            .clipShape(Circle())
+                        Text(hero.name)
+                        Spacer()
+                        Text("Class: \(hero.heroClass)")
+                            .offset(x: -20)
+                    }
+                    NavigationLink {
+                        HeroDetailView(hero: hero)
+                    } label: {
+                        Text("")
+                    }
                 }
             }
             .navigationTitle("Heroes")
