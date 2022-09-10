@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct HeroesList: View {
+    @EnvironmentObject var dataManager: DataManager
+    @State private var showPopup = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(dataManager.heroes, id: \.id) { hero in
+                Image(hero.imageName)
+                    .clipShape(Circle())
+                Text(hero.name)
+            }
+            .navigationTitle("Heroes")
+            .navigationBarItems(trailing: Button(action: {
+                showPopup.toggle()
+            }, label: {
+                Image(systemName: "plus")
+            }))
+            .sheet(isPresented: $showPopup) {
+                NewHeroAdd()
+            }
+        }
     }
 }
 
 struct HeroesList_Previews: PreviewProvider {
     static var previews: some View {
         HeroesList()
+            .environmentObject(DataManager())
     }
 }
