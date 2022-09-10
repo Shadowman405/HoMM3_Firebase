@@ -9,16 +9,16 @@ import SwiftUI
 import Firebase
 
 class DataManager: ObservableObject {
-    @Published var dogs: [Hero] = []
+    @Published var heroes: [Hero] = []
     
     init(){
         fetchDogs()
     }
     
     func fetchDogs() {
-        dogs.removeAll()
+        heroes.removeAll()
         let db = Firestore.firestore()
-        let ref = db.collection("Dogs")
+        let ref = db.collection("Heroes")
         ref.getDocuments { snapshot, error in
             guard error == nil else {
                 print(error!.localizedDescription)
@@ -29,10 +29,16 @@ class DataManager: ObservableObject {
                     let data = document.data()
                     
                     let id = data["id"] as? Int ?? 0
+                    let imageName = data["imageName"] as? String ?? ""
                     let name = data["name"] as? String ?? ""
+                    let heroClass = data["heroClass"] as? String ?? ""
+                    let heroSpec = data["heroSpec"] as? String ?? ""
+                    let firstSkill = data["firstSkill"] as? String ?? ""
+                    let secondSkill = data["secondSkill"] as? String ?? ""
+                    let heroDescr = data["heroDescr"] as? String ?? ""
                     
-                    let dog = Hero(id: id, name: name)
-                    self.dogs.append(dog)
+                    let hero = Hero(id: id, imageName: imageName, name: name, heroClass: heroClass, heroSpec: heroSpec, heroFirstSkill: firstSkill, heroSecondSkill: secondSkill, heroDescription: heroDescr)
+                    self.heroes.append(hero)
                 }
             }
         }
@@ -40,7 +46,7 @@ class DataManager: ObservableObject {
     
     func addDog(dogBreed: String) {
         let db = Firestore.firestore()
-        let ref = db.collection("Dogs").document(dogBreed)
+        let ref = db.collection("Heroes").document(dogBreed)
         ref.setData(["breed": dogBreed, "id": Int.random(in: 6..<10000)]) { error in
             if let error = error {
                 print(error.localizedDescription)

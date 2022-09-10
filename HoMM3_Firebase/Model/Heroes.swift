@@ -9,5 +9,11 @@ import SwiftUI
 
 struct Hero: Identifiable {
     var id: Int
+    var imageName: String
     var name: String
+    var heroClass: String
+    var heroSpec: String
+    var heroFirstSkill: String
+    var heroSecondSkill: String?
+    var heroDescription: String
 }
