@@ -47,14 +47,14 @@ class DataManager: ObservableObject {
     func addHero(id: Int, imageName: String, name: String, heroClass: String, heroSpec: String, heroFirstSkill: String, heroSecondSkill: String?, heroDescription: String) {
         let db = Firestore.firestore()
         let ref = db.collection("Heroes").document(name)
-        ref.setData(["id": Int.random(in: 1..<10000),
+        ref.setData(["id": id,
                      "imageName": imageName,
                      "name": name,
                      "heroClass": heroClass,
                      "heroSpec": heroSpec,
-                     "heroFirstSkill": heroFirstSkill,
-                     "heroSecondSkill": heroSecondSkill as Any,
-                     "heroDescription": heroDescription
+                     "firstSkill": heroFirstSkill,
+                     "secondSkill": heroSecondSkill as Any,
+                     "heroDescr": heroDescription
                     ]) { error in
             if let error = error {
                 print(error.localizedDescription)

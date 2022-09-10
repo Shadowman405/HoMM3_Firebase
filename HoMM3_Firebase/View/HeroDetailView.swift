@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HeroDetailView: View {
     @EnvironmentObject var dataManager: DataManager
+    
     var hero: Hero
     
     var body: some View {
