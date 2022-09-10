@@ -12,10 +12,10 @@ class DataManager: ObservableObject {
     @Published var heroes: [Hero] = []
     
     init(){
-        fetchDogs()
+        fetchHeroes()
     }
     
-    func fetchDogs() {
+    func fetchHeroes() {
         heroes.removeAll()
         let db = Firestore.firestore()
         let ref = db.collection("Heroes")
@@ -44,10 +44,18 @@ class DataManager: ObservableObject {
         }
     }
     
-    func addDog(dogBreed: String) {
+    func addHero(id: Int, imageName: String, name: String, heroClass: String, heroSpec: String, heroFirstSkill: String, heroSecondSkill: String?, heroDescription: String) {
         let db = Firestore.firestore()
-        let ref = db.collection("Heroes").document(dogBreed)
-        ref.setData(["breed": dogBreed, "id": Int.random(in: 6..<10000)]) { error in
+        let ref = db.collection("Heroes").document(name)
+        ref.setData(["id": Int.random(in: 1..<10000),
+                     "imageName": imageName,
+                     "name": name,
+                     "heroClass": heroClass,
+                     "heroSpec": heroSpec,
+                     "heroFirstSkill": heroFirstSkill,
+                     "heroSecondSkill": heroSecondSkill as Any,
+                     "heroDescription": heroDescription
+                    ]) { error in
             if let error = error {
                 print(error.localizedDescription)
             }
