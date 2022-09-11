@@ -40,6 +40,9 @@ struct HeroesList: View {
                 NewHeroAdd()
             }
         }
+        .onAppear{
+            dataManager.fetchHeroes()
+        }
     }
 }
 

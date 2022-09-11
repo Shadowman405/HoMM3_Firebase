@@ -12,7 +12,7 @@ class DataManager: ObservableObject {
     @Published var heroes: [Hero] = []
     
     init(){
-        fetchHeroes()
+        //fetchHeroes()
     }
     
     func fetchHeroes() {
