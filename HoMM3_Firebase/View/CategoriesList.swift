@@ -27,7 +27,7 @@ struct CategoriesList: View {
                         
                         if category.id == 0 {
                             NavigationLink {
-                                HeroesList(dataManager: _dataManager)
+                                TownsGrid(dataManager: _dataManager)
                             } label: {
                                 Text("")
                             }
