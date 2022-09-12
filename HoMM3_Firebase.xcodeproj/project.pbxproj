@@ -23,6 +23,7 @@
 		BFE679BE28CD08B5001B8FFC /* NewHeroAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679BD28CD08B5001B8FFC /* NewHeroAdd.swift */; };
 		BFE679C128CD10BC001B8FFC /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679C028CD10BC001B8FFC /* HeroDetailView.swift */; };
 		BFE679C328CFB618001B8FFC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679C228CFB618001B8FFC /* Category.swift */; };
+		BFE679C528CFB80F001B8FFC /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679C428CFB80F001B8FFC /* CategoriesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		BFE679BD28CD08B5001B8FFC /* NewHeroAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHeroAdd.swift; sourceTree = "<group>"; };
 		BFE679C028CD10BC001B8FFC /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		BFE679C228CFB618001B8FFC /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		BFE679C428CFB80F001B8FFC /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				BFE679B328CCF789001B8FFC /* HeroesList.swift */,
 				BFE679BD28CD08B5001B8FFC /* NewHeroAdd.swift */,
 				BFE679C028CD10BC001B8FFC /* HeroDetailView.swift */,
+				BFE679C428CFB80F001B8FFC /* CategoriesList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				BFE679BE28CD08B5001B8FFC /* NewHeroAdd.swift in Sources */,
 				BFE679B428CCF789001B8FFC /* HeroesList.swift in Sources */,
 				BFE679BA28CCF7F2001B8FFC /* Heroes.swift in Sources */,
+				BFE679C528CFB80F001B8FFC /* CategoriesList.swift in Sources */,
 				BFE6798528CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift in Sources */,
 				BFE679C328CFB618001B8FFC /* Category.swift in Sources */,
 			);

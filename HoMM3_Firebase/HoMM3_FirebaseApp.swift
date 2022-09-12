@@ -18,7 +18,7 @@ struct HoMM3_FirebaseApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CategoriesList()
                 .environmentObject(dataManager)
         }
     }

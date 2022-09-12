@@ -14,6 +14,7 @@ class DataManager: ObservableObject {
     
     init(){
         //fetchHeroes()
+        fetchCategory()
     }
     
     
@@ -82,14 +83,9 @@ class DataManager: ObservableObject {
                     let id = data["id"] as? Int ?? 0
                     let imageName = data["imageName"] as? String ?? ""
                     let name = data["name"] as? String ?? ""
-                    let heroClass = data["heroClass"] as? String ?? ""
-                    let heroSpec = data["heroSpec"] as? String ?? ""
-                    let firstSkill = data["firstSkill"] as? String ?? ""
-                    let secondSkill = data["secondSkill"] as? String ?? ""
-                    let heroDescr = data["heroDescr"] as? String ?? ""
                     
-                    let hero = Hero(id: id, imageName: imageName, name: name, heroClass: heroClass, heroSpec: heroSpec, heroFirstSkill: firstSkill, heroSecondSkill: secondSkill, heroDescription: heroDescr)
-                    self.heroes.append(hero)
+                    let category = Category(id: id, name: name, imageName: imageName)
+                    self.categories.append(category)
                 }
             }
         }
