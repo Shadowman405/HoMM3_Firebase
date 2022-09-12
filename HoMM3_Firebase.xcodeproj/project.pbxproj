@@ -28,6 +28,7 @@
 		BFE679CA28CFBCC2001B8FFC /* H3main_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BFE679C928CFBCC2001B8FFC /* H3main_video.mp4 */; };
 		BFE679CC28CFBD9A001B8FFC /* Towns.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679CB28CFBD9A001B8FFC /* Towns.swift */; };
 		BFE679CE28CFBF5B001B8FFC /* TownsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679CD28CFBF5B001B8FFC /* TownsGrid.swift */; };
+		BFE679D028CFBFCA001B8FFC /* TownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679CF28CFBFCA001B8FFC /* TownCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		BFE679C928CFBCC2001B8FFC /* H3main_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = H3main_video.mp4; sourceTree = "<group>"; };
 		BFE679CB28CFBD9A001B8FFC /* Towns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Towns.swift; sourceTree = "<group>"; };
 		BFE679CD28CFBF5B001B8FFC /* TownsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownsGrid.swift; sourceTree = "<group>"; };
+		BFE679CF28CFBFCA001B8FFC /* TownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				BFE679C428CFB80F001B8FFC /* CategoriesList.swift */,
 				BFE679C628CFBBA6001B8FFC /* VideoPlayerView.swift */,
 				BFE679CD28CFBF5B001B8FFC /* TownsGrid.swift */,
+				BFE679CF28CFBFCA001B8FFC /* TownCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				BFE679C528CFB80F001B8FFC /* CategoriesList.swift in Sources */,
 				BFE6798528CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift in Sources */,
 				BFE679C328CFB618001B8FFC /* Category.swift in Sources */,
+				BFE679D028CFBFCA001B8FFC /* TownCell.swift in Sources */,
 				BFE679C728CFBBA6001B8FFC /* VideoPlayerView.swift in Sources */,
 				BFE679CE28CFBF5B001B8FFC /* TownsGrid.swift in Sources */,
 			);

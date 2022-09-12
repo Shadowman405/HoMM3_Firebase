@@ -17,7 +17,7 @@ struct TownsGrid: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns) {
-                ForEach(townGrid.towns){ town in
+                ForEach(dataManager.towns){ town in
                     TownCell(town: town)
                 }
             }
