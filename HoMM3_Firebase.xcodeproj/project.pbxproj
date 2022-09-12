@@ -24,6 +24,8 @@
 		BFE679C128CD10BC001B8FFC /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679C028CD10BC001B8FFC /* HeroDetailView.swift */; };
 		BFE679C328CFB618001B8FFC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679C228CFB618001B8FFC /* Category.swift */; };
 		BFE679C528CFB80F001B8FFC /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679C428CFB80F001B8FFC /* CategoriesList.swift */; };
+		BFE679C728CFBBA6001B8FFC /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679C628CFBBA6001B8FFC /* VideoPlayerView.swift */; };
+		BFE679CA28CFBCC2001B8FFC /* H3main_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BFE679C928CFBCC2001B8FFC /* H3main_video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		BFE679C028CD10BC001B8FFC /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		BFE679C228CFB618001B8FFC /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		BFE679C428CFB80F001B8FFC /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
+		BFE679C628CFBBA6001B8FFC /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		BFE679C928CFBCC2001B8FFC /* H3main_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = H3main_video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 		BFE6798328CCF5D3001B8FFC /* HoMM3_Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				BFE679C828CFBCB4001B8FFC /* Video */,
 				BFE679BF28CD0914001B8FFC /* View */,
 				BFE679B828CCF7DB001B8FFC /* Model */,
 				BFE679B728CCF7C7001B8FFC /* Manager */,
@@ -175,8 +180,17 @@
 				BFE679BD28CD08B5001B8FFC /* NewHeroAdd.swift */,
 				BFE679C028CD10BC001B8FFC /* HeroDetailView.swift */,
 				BFE679C428CFB80F001B8FFC /* CategoriesList.swift */,
+				BFE679C628CFBBA6001B8FFC /* VideoPlayerView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BFE679C828CFBCB4001B8FFC /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				BFE679C928CFBCC2001B8FFC /* H3main_video.mp4 */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE6798C28CCF5D5001B8FFC /* Preview Assets.xcassets in Resources */,
+				BFE679CA28CFBCC2001B8FFC /* H3main_video.mp4 in Resources */,
 				BFE6798928CCF5D5001B8FFC /* Assets.xcassets in Resources */,
 				BFE679BC28CD075E001B8FFC /* GoogleService-Info.plist in Resources */,
 			);
@@ -326,6 +341,7 @@
 				BFE679C528CFB80F001B8FFC /* CategoriesList.swift in Sources */,
 				BFE6798528CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift in Sources */,
 				BFE679C328CFB618001B8FFC /* Category.swift in Sources */,
+				BFE679C728CFBBA6001B8FFC /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

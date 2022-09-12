@@ -12,29 +12,36 @@ struct CategoriesList: View {
     
     var body: some View {
         NavigationView {
-            List(dataManager.categories, id: \.id) { category in
-                HStack {
-                    Image(category.imageName)
-                        .clipShape(Circle())
-                        .frame(width: 50, height: 50)
-                    Text(category.name)
-                    
-                    if category.id == 0 {
-                        NavigationLink {
-                            HeroesList(dataManager: _dataManager)
-                        } label: {
-                            Text("")
-                        }
-                    } else if category.id == 1 {
-                        NavigationLink {
-                            HeroesList(dataManager: _dataManager)
-                        } label: {
-                            Text("")
+            VStack {
+                VideoPlayerView()
+                    .clipShape(Rectangle())
+                    .cornerRadius(10)
+                    .padding()
+                
+                List(dataManager.categories, id: \.id) { category in
+                    HStack {
+                        Image(category.imageName)
+                            .clipShape(Circle())
+                            .frame(width: 50, height: 50)
+                        Text(category.name)
+                        
+                        if category.id == 0 {
+                            NavigationLink {
+                                HeroesList(dataManager: _dataManager)
+                            } label: {
+                                Text("")
+                            }
+                        } else if category.id == 1 {
+                            NavigationLink {
+                                HeroesList(dataManager: _dataManager)
+                            } label: {
+                                Text("")
+                            }
                         }
                     }
                 }
+                .navigationTitle("Heroes 3 Wiki")
             }
-            .navigationTitle("Heroes 3 Wiki")
         }
     }
 }
