@@ -26,6 +26,7 @@
 		BFE679C528CFB80F001B8FFC /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679C428CFB80F001B8FFC /* CategoriesList.swift */; };
 		BFE679C728CFBBA6001B8FFC /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679C628CFBBA6001B8FFC /* VideoPlayerView.swift */; };
 		BFE679CA28CFBCC2001B8FFC /* H3main_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BFE679C928CFBCC2001B8FFC /* H3main_video.mp4 */; };
+		BFE679CC28CFBD9A001B8FFC /* Towns.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679CB28CFBD9A001B8FFC /* Towns.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		BFE679C428CFB80F001B8FFC /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
 		BFE679C628CFBBA6001B8FFC /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		BFE679C928CFBCC2001B8FFC /* H3main_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = H3main_video.mp4; sourceTree = "<group>"; };
+		BFE679CB28CFBD9A001B8FFC /* Towns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Towns.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				BFE679B928CCF7F2001B8FFC /* Heroes.swift */,
 				BFE679C228CFB618001B8FFC /* Category.swift */,
+				BFE679CB28CFBD9A001B8FFC /* Towns.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE6798728CCF5D3001B8FFC /* ContentView.swift in Sources */,
+				BFE679CC28CFBD9A001B8FFC /* Towns.swift in Sources */,
 				BFE679B628CCF796001B8FFC /* DataManager.swift in Sources */,
 				BFE679C128CD10BC001B8FFC /* HeroDetailView.swift in Sources */,
 				BFE679BE28CD08B5001B8FFC /* NewHeroAdd.swift in Sources */,

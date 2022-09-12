@@ -11,10 +11,12 @@ import Firebase
 class DataManager: ObservableObject {
     @Published var heroes: [Hero] = []
     @Published var categories: [Category] = []
+    @Published var towns: [Town] = []
     
     init(){
         //fetchHeroes()
         fetchCategory()
+        fetchTowns()
     }
     
     
@@ -91,6 +93,30 @@ class DataManager: ObservableObject {
         }
     }
 
-    
+    // MARK: - Towns
+    func fetchTowns() {
+        towns.removeAll()
+        let db = Firestore.firestore()
+        let ref = db.collection("Towns")
+        ref.getDocuments { snapshot, error in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return
+            }
+            if let snapshot = snapshot {
+                for document in snapshot.documents {
+                    let data = document.data()
+                    
+                    let id = data["id"] as? Int ?? 0
+                    let imageName = data["imageName"] as? String ?? ""
+                    let name = data["name"] as? String ?? ""
+                    
+                    let town = Town(id: id, name: name, imageName: imageName)
+                    self.towns.append(town)
+                }
+            }
+        }
+    }
+
 }
 
