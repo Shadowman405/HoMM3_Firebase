@@ -18,6 +18,20 @@ struct CategoriesList: View {
                         .clipShape(Circle())
                         .frame(width: 50, height: 50)
                     Text(category.name)
+                    
+                    if category.id == 0 {
+                        NavigationLink {
+                            HeroesList(dataManager: _dataManager)
+                        } label: {
+                            Text("")
+                        }
+                    } else if category.id == 1 {
+                        NavigationLink {
+                            HeroesList(dataManager: _dataManager)
+                        } label: {
+                            Text("")
+                        }
+                    }
                 }
             }
             .navigationTitle("Heroes 3 Wiki")
