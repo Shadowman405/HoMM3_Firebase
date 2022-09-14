@@ -147,6 +147,23 @@ class DataManager: ObservableObject {
             }
         }
     }
+    
+    func addArtifact(id: Int, imageName: String, name: String, slot: String, effect: String, description: String) {
+        let db = Firestore.firestore()
+        let ref = db.collection("Artifacts").document(name)
+        ref.setData(["id": id,
+                     "imageName": imageName,
+                     "name": name,
+                     "slot": slot,
+                     "effect": effect,
+                     "description": description
+                    ]) { error in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+    }
+
 
 }
 
