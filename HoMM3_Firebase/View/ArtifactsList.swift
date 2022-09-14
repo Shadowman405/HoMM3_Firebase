@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ArtifactsList: View {
     @EnvironmentObject var dataManager: DataManager
-
+    @State private var searchText = ""
     
     var body: some View {
         List(dataManager.artifacts, id: \.id) { artifact in
@@ -37,6 +37,8 @@ struct ArtifactsList: View {
                 }
             }
         }
+        .navigationTitle("Artifacts")
+        .searchable(text: $searchText)
     }
 }
 
