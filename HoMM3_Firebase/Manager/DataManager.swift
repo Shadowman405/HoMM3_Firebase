@@ -12,6 +12,7 @@ class DataManager: ObservableObject {
     @Published var heroes: [Hero] = []
     @Published var categories: [Category] = []
     @Published var towns: [Town] = []
+    @Published var artifacts: [Artifact] = []
     
     init(){
         //fetchHeroes()
@@ -113,6 +114,34 @@ class DataManager: ObservableObject {
                     
                     let town = Town(id: id, name: name, imageName: imageName)
                     self.towns.append(town)
+                }
+            }
+        }
+    }
+    
+// MARK: - Artifacts
+    func fetchArtifacts() {
+        artifacts.removeAll()
+        let db = Firestore.firestore()
+        let ref = db.collection("Artifacts")
+        ref.getDocuments { snapshot, error in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return
+            }
+            if let snapshot = snapshot {
+                for document in snapshot.documents {
+                    let data = document.data()
+                    
+                    let id = data["id"] as? Int ?? 0
+                    let imageName = data["imageName"] as? String ?? ""
+                    let name = data["name"] as? String ?? ""
+                    let slot = data["slot"] as? String ?? ""
+                    let effect = data["effect"] as? String ?? ""
+                    let description = data["description"] as? String ?? ""
+                    
+                    let artifact = Artifact(id: id, name: name, imageName: imageName, slot: slot, effect: effect, description: description)
+                    self.artifacts.append(artifact)
                 }
             }
         }
