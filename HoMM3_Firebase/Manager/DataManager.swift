@@ -18,6 +18,7 @@ class DataManager: ObservableObject {
         //fetchHeroes()
         fetchCategory()
         fetchTowns()
+        fetchArtifacts()
     }
     
     

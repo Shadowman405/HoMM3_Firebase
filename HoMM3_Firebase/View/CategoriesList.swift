@@ -37,6 +37,12 @@ struct CategoriesList: View {
                             } label: {
                                 Text("")
                             }
+                        } else if category.id == 4 {
+                            NavigationLink {
+                                ArtifactsList(dataManager: _dataManager)
+                            } label: {
+                                Text("")
+                            }
                         }
                     }
                 }
