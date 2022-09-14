@@ -32,6 +32,7 @@
 		BFE679D228D24C3B001B8FFC /* Artifact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679D128D24C3B001B8FFC /* Artifact.swift */; };
 		BFE679D428D24C82001B8FFC /* ArtifactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679D328D24C82001B8FFC /* ArtifactsList.swift */; };
 		BFE679D628D24FF6001B8FFC /* ArtifactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679D528D24FF6001B8FFC /* ArtifactDetailsView.swift */; };
+		BFE679D828D25521001B8FFC /* NewArtifactAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679D728D25521001B8FFC /* NewArtifactAdd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		BFE679D128D24C3B001B8FFC /* Artifact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artifact.swift; sourceTree = "<group>"; };
 		BFE679D328D24C82001B8FFC /* ArtifactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsList.swift; sourceTree = "<group>"; };
 		BFE679D528D24FF6001B8FFC /* ArtifactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailsView.swift; sourceTree = "<group>"; };
+		BFE679D728D25521001B8FFC /* NewArtifactAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArtifactAdd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				BFE679CF28CFBFCA001B8FFC /* TownCell.swift */,
 				BFE679D328D24C82001B8FFC /* ArtifactsList.swift */,
 				BFE679D528D24FF6001B8FFC /* ArtifactDetailsView.swift */,
+				BFE679D728D25521001B8FFC /* NewArtifactAdd.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				BFE679C728CFBBA6001B8FFC /* VideoPlayerView.swift in Sources */,
 				BFE679D428D24C82001B8FFC /* ArtifactsList.swift in Sources */,
 				BFE679CE28CFBF5B001B8FFC /* TownsGrid.swift in Sources */,
+				BFE679D828D25521001B8FFC /* NewArtifactAdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

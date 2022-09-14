@@ -10,6 +10,7 @@ import SwiftUI
 struct ArtifactsList: View {
     @EnvironmentObject var dataManager: DataManager
     @State private var searchText = ""
+    @State private var showPopup = false
     
     var body: some View {
         List(dataManager.artifacts, id: \.id) { artifact in
@@ -39,6 +40,14 @@ struct ArtifactsList: View {
         }
         .navigationTitle("Artifacts")
         .searchable(text: $searchText)
+        .navigationBarItems(trailing: Button(action: {
+            showPopup.toggle()
+        }, label: {
+            Image(systemName: "plus")
+        }))
+        .sheet(isPresented: $showPopup) {
+            NewArtifactAdd()
+        }
     }
 }
 
