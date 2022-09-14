@@ -31,6 +31,7 @@
 		BFE679D028CFBFCA001B8FFC /* TownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679CF28CFBFCA001B8FFC /* TownCell.swift */; };
 		BFE679D228D24C3B001B8FFC /* Artifact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679D128D24C3B001B8FFC /* Artifact.swift */; };
 		BFE679D428D24C82001B8FFC /* ArtifactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679D328D24C82001B8FFC /* ArtifactsList.swift */; };
+		BFE679D628D24FF6001B8FFC /* ArtifactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679D528D24FF6001B8FFC /* ArtifactDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		BFE679CF28CFBFCA001B8FFC /* TownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TownCell.swift; sourceTree = "<group>"; };
 		BFE679D128D24C3B001B8FFC /* Artifact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artifact.swift; sourceTree = "<group>"; };
 		BFE679D328D24C82001B8FFC /* ArtifactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsList.swift; sourceTree = "<group>"; };
+		BFE679D528D24FF6001B8FFC /* ArtifactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 				BFE679CD28CFBF5B001B8FFC /* TownsGrid.swift */,
 				BFE679CF28CFBFCA001B8FFC /* TownCell.swift */,
 				BFE679D328D24C82001B8FFC /* ArtifactsList.swift */,
+				BFE679D528D24FF6001B8FFC /* ArtifactDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				BFE6798728CCF5D3001B8FFC /* ContentView.swift in Sources */,
 				BFE679D228D24C3B001B8FFC /* Artifact.swift in Sources */,
 				BFE679CC28CFBD9A001B8FFC /* Towns.swift in Sources */,
+				BFE679D628D24FF6001B8FFC /* ArtifactDetailsView.swift in Sources */,
 				BFE679B628CCF796001B8FFC /* DataManager.swift in Sources */,
 				BFE679C128CD10BC001B8FFC /* HeroDetailView.swift in Sources */,
 				BFE679BE28CD08B5001B8FFC /* NewHeroAdd.swift in Sources */,
