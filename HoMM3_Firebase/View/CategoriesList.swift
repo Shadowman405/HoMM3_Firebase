@@ -43,6 +43,12 @@ struct CategoriesList: View {
                             } label: {
                                 Text("")
                             }
+                        } else if category.id == 3 {
+                            NavigationLink {
+                                SpellsList(dataManager: _dataManager)
+                            } label: {
+                                Text("")
+                            }
                         }
                     }
                 }
