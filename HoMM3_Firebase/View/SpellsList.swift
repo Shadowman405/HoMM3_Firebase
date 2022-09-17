@@ -13,6 +13,24 @@ struct SpellsList: View {
     let schools = ["Earth Magic", "Water Magic", "Air Magic", "Fire Magic", "All Schools"]
     
     var body: some View {
+        Text("Select Magic School")
+            .font(.title3)
+        Picker("Choose Magic School",selection: $selectedSchool) {
+            ForEach(0..<schools.count){ school in
+                if school == 0 {
+                    Text("Earth magic")
+                } else if school == 2 {
+                    Text("Air Magic")
+                } else if school == 1 {
+                    Text("Water Magic")
+                } else if school == 3 {
+                    Text("Fire Magic")
+                } else {
+                    Text("All Schools")
+                }
+            }
+        }
+        
         List(dataManager.spells, id: \.id) { spell in
             
             ZStack(alignment: .leading) {
