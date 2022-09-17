@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SpellsList: View {
     @EnvironmentObject var dataManager: DataManager
-    @State var selectedSchool = "Water Magic"
+    @State var selectedSchool = "All Schools"
     let schools = ["Earth Magic", "Water Magic", "Air Magic", "Fire Magic", "All Schools"]
     
     var body: some View {
@@ -31,24 +31,54 @@ struct SpellsList: View {
             }
         }
         
-        List(dataManager.spells, id: \.id) { spell in
-            
-            ZStack(alignment: .leading) {
-                HStack {
-                    ZStack {
-                        Circle().foregroundColor(.indigo)
-
-                        
+        List {
+            ForEach(searchResults) { spell in
+                ZStack {
+                    HStack {
                         Image(spell.imageName)
-                            .clipShape(Circle().stroke(lineWidth: 80))
-                        .shadow(color: .orange, radius: 10)
+                            .frame(width: 60, height:50)
+                        Text(spell.name)
+                        Spacer()
+                        Text("   Spell Level :\(spell.spellLevel)")
+                            .offset(x: -20)
+                        
                     }
-                    .frame(width: 50, height: 50)
-                    
-                    Text(spell.name)
-                        .font(.title2)
+                    NavigationLink {
+                        SpellDetailView()
+                    } label: {
+                        Text("")
+                    }
                 }
             }
+        }
+        .navigationTitle("Spells")
+    }
+    
+    var searchResults: [Spell] {
+        if selectedSchool == "Fire Magic" {
+            return dataManager.spells.filter{
+                $0.spellSchool == "Fire Magic"
+            }
+        } else if selectedSchool == "Water Magic"{
+            return dataManager.spells.filter {
+                $0.spellSchool == "Water Magic"
+            }
+        } else if selectedSchool == "Air Magic"{
+            return dataManager.spells.filter {
+                $0.spellSchool == "Air Magic"
+            }
+        } else if selectedSchool == "Earth Magic" {
+            return dataManager.spells.filter {
+                $0.spellSchool == "Earth Magic"
+            }
+        } else if selectedSchool == "All Schools" {
+            return dataManager.spells
+
+//            return mainCat.spells.filter {
+//                $0.spellSchool == .AllSchools
+//            }
+        } else {
+            return dataManager.spells
         }
     }
 }
