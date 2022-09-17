@@ -13,6 +13,7 @@ class DataManager: ObservableObject {
     @Published var categories: [Category] = []
     @Published var towns: [Town] = []
     @Published var artifacts: [Artifact] = []
+    @Published var spells: [Spell] = []
     
     init(){
         //fetchHeroes()
@@ -164,6 +165,50 @@ class DataManager: ObservableObject {
         }
     }
 
+    // MARK: - Magic
+    
+    func fetchSpells() {
+        spells.removeAll()
+        let db = Firestore.firestore()
+        let ref = db.collection("Spells")
+        ref.getDocuments { snapshot, error in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return
+            }
+            if let snapshot = snapshot {
+                for document in snapshot.documents {
+                    let data = document.data()
+                    
+                    let id = data["id"] as? Int ?? 0
+                    let imageName = data["imageName"] as? String ?? ""
+                    let name = data["name"] as? String ?? ""
+                    let spellLevel = data["spellLvl"] as? Int ?? 1
+                    let spellSchool = data["spellSchool"] as? String ?? ""
+                    let description = data["description"] as? String ?? ""
+                    
+                    let spell = Spell(id: id, name: name, imageName: imageName, description: description, spellLevel: spellLevel, spellSchool: spellSchool)
+                    self.spells.append(spell)
+                }
+            }
+        }
+    }
+    
+    func addSpell(id: Int, imageName: String, name: String, spellLevel: Int, spellSchool: String, description: String) {
+        let db = Firestore.firestore()
+        let ref = db.collection("Spells").document(name)
+        ref.setData(["id": id,
+                     "imageName": imageName,
+                     "name": name,
+                     "spellLevel": spellLevel,
+                     "spellSchool": spellSchool,
+                     "description": description
+                    ]) { error in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+    }
 
 }
 
