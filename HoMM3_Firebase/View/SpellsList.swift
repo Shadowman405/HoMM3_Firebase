@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SpellsList: View {
     @EnvironmentObject var dataManager: DataManager
-    @State var selectedSchool = "All Schools"
+    @State var selectedSchool = "Water Magic"
     let schools = ["Earth Magic", "Water Magic", "Air Magic", "Fire Magic", "All Schools"]
     
     var body: some View {
