@@ -11,6 +11,8 @@ struct SpellsList: View {
     @EnvironmentObject var dataManager: DataManager
     @State var selectedSchool = "Water Magic"
     let schools = ["Earth Magic", "Water Magic", "Air Magic", "Fire Magic", "All Schools"]
+    var spellsArray: [Spell] = []
+    var filterSpellsArray: [Spell] = []
     
     var body: some View {
         Text("Select Magic School")
@@ -56,29 +58,31 @@ struct SpellsList: View {
     
     var searchResults: [Spell] {
         if selectedSchool == "Fire Magic" {
-            return dataManager.spells.filter{
+            return spellsArray.filter{
                 $0.spellSchool == "Fire Magic"
             }
         } else if selectedSchool == "Water Magic"{
-            return dataManager.spells.filter {
+            return spellsArray.filter {
                 $0.spellSchool == "Water Magic"
             }
         } else if selectedSchool == "Air Magic"{
-            return dataManager.spells.filter {
+            return spellsArray.filter {
                 $0.spellSchool == "Air Magic"
             }
         } else if selectedSchool == "Earth Magic" {
-            return dataManager.spells.filter {
+            return spellsArray.filter {
                 $0.spellSchool == "Earth Magic"
             }
         } else if selectedSchool == "All Schools" {
-            return dataManager.spells
+            return spellsArray.filter{
+                $0.spellSchool == "All Schools"
+            }
 
 //            return mainCat.spells.filter {
 //                $0.spellSchool == .AllSchools
 //            }
         } else {
-            return dataManager.spells
+            return spellsArray
         }
     }
 }

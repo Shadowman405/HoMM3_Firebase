@@ -45,7 +45,7 @@ struct CategoriesList: View {
                             }
                         } else if category.id == 3 {
                             NavigationLink {
-                                SpellsList(dataManager: _dataManager)
+                                SpellsList(dataManager: _dataManager, spellsArray: dataManager.spells)
                             } label: {
                                 Text("")
                             }

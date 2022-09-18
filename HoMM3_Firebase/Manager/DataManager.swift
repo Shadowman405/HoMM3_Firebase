@@ -190,6 +190,7 @@ class DataManager: ObservableObject {
                     
                     let spell = Spell(id: id, name: name, imageName: imageName, description: description, spellLevel: spellLevel, spellSchool: spellSchool)
                     self.spells.append(spell)
+                    print(self.spells)
                 }
             }
         }
