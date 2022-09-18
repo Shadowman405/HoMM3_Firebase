@@ -13,6 +13,8 @@ struct SpellDetailView: View {
     
     var body: some View {
         ZStack {
+            AnimatedBackView()
+                .edgesIgnoringSafeArea(.all)
             
             ScrollView {
                 VStack {

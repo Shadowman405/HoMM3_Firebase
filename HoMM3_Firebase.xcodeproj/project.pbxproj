@@ -36,6 +36,7 @@
 		BFE679DA28D5E0FC001B8FFC /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679D928D5E0FC001B8FFC /* Spell.swift */; };
 		BFE679DC28D5E236001B8FFC /* SpellsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679DB28D5E236001B8FFC /* SpellsList.swift */; };
 		BFE679DE28D5E932001B8FFC /* SpellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679DD28D5E932001B8FFC /* SpellDetailView.swift */; };
+		BFE679E028D7A381001B8FFC /* AnimatedBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679DF28D7A381001B8FFC /* AnimatedBackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		BFE679D928D5E0FC001B8FFC /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 		BFE679DB28D5E236001B8FFC /* SpellsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsList.swift; sourceTree = "<group>"; };
 		BFE679DD28D5E932001B8FFC /* SpellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailView.swift; sourceTree = "<group>"; };
+		BFE679DF28D7A381001B8FFC /* AnimatedBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 				BFE679D728D25521001B8FFC /* NewArtifactAdd.swift */,
 				BFE679DB28D5E236001B8FFC /* SpellsList.swift */,
 				BFE679DD28D5E932001B8FFC /* SpellDetailView.swift */,
+				BFE679DF28D7A381001B8FFC /* AnimatedBackView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				BFE679C328CFB618001B8FFC /* Category.swift in Sources */,
 				BFE679D028CFBFCA001B8FFC /* TownCell.swift in Sources */,
 				BFE679C728CFBBA6001B8FFC /* VideoPlayerView.swift in Sources */,
+				BFE679E028D7A381001B8FFC /* AnimatedBackView.swift in Sources */,
 				BFE679D428D24C82001B8FFC /* ArtifactsList.swift in Sources */,
 				BFE679CE28CFBF5B001B8FFC /* TownsGrid.swift in Sources */,
 				BFE679D828D25521001B8FFC /* NewArtifactAdd.swift in Sources */,
