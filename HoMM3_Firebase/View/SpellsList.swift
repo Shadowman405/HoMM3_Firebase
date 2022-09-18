@@ -12,7 +12,6 @@ struct SpellsList: View {
     @State var selectedSchool = 0
     let schools = ["Earth Magic", "Water Magic", "Air Magic", "Fire Magic", "All Schools"]
     var spellsArray: [Spell] = []
-    var filterSpellsArray: [Spell] = []
     
     var body: some View {
         Text("Select Magic School")
@@ -46,7 +45,7 @@ struct SpellsList: View {
                         
                     }
                     NavigationLink {
-                        SpellDetailView()
+                        SpellDetailView(spell: spell)
                     } label: {
                         Text("")
                     }
