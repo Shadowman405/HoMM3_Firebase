@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SpellsList: View {
     @EnvironmentObject var dataManager: DataManager
-    @State var selectedSchool = "Water Magic"
+    @State var selectedSchool = 0
     let schools = ["Earth Magic", "Water Magic", "Air Magic", "Fire Magic", "All Schools"]
     var spellsArray: [Spell] = []
     var filterSpellsArray: [Spell] = []
@@ -54,26 +54,29 @@ struct SpellsList: View {
             }
         }
         .navigationTitle("Spells")
+        .onAppear{
+            print(spellsArray)
+        }
     }
     
     var searchResults: [Spell] {
-        if selectedSchool == "Fire Magic" {
+        if selectedSchool == 3 {
             return spellsArray.filter{
                 $0.spellSchool == "Fire Magic"
             }
-        } else if selectedSchool == "Water Magic"{
+        } else if selectedSchool == 1 {
             return spellsArray.filter {
                 $0.spellSchool == "Water Magic"
             }
-        } else if selectedSchool == "Air Magic"{
+        } else if selectedSchool == 2{
             return spellsArray.filter {
                 $0.spellSchool == "Air Magic"
             }
-        } else if selectedSchool == "Earth Magic" {
+        } else if selectedSchool == 0 {
             return spellsArray.filter {
                 $0.spellSchool == "Earth Magic"
             }
-        } else if selectedSchool == "All Schools" {
+        } else if selectedSchool == 4 {
             return spellsArray.filter{
                 $0.spellSchool == "All Schools"
             }
