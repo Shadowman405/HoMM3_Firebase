@@ -10,6 +10,7 @@ import SwiftUI
 struct SpellsList: View {
     @EnvironmentObject var dataManager: DataManager
     @State var selectedSchool = 0
+    @State private var showPopup = false
     let schools = ["Earth Magic", "Water Magic", "Air Magic", "Fire Magic", "All Schools"]
     var spellsArray: [Spell] = []
     
@@ -53,9 +54,15 @@ struct SpellsList: View {
             }
         }
         .navigationTitle("Spells")
-        .onAppear{
-            print(spellsArray)
+        .navigationBarItems(trailing: Button(action: {
+            showPopup.toggle()
+        }, label: {
+            Image(systemName: "plus")
+        }))
+        .sheet(isPresented: $showPopup) {
+            NewSpellAdd()
         }
+
     }
     
     var searchResults: [Spell] {
