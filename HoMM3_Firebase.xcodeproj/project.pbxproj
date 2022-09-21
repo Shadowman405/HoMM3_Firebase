@@ -38,6 +38,7 @@
 		BFE679DE28D5E932001B8FFC /* SpellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679DD28D5E932001B8FFC /* SpellDetailView.swift */; };
 		BFE679E028D7A381001B8FFC /* AnimatedBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679DF28D7A381001B8FFC /* AnimatedBackView.swift */; };
 		BFE679E228D7A6EE001B8FFC /* NewSpellAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679E128D7A6EE001B8FFC /* NewSpellAdd.swift */; };
+		BFE679E428DB85A1001B8FFC /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679E328DB85A1001B8FFC /* Creature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		BFE679DD28D5E932001B8FFC /* SpellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailView.swift; sourceTree = "<group>"; };
 		BFE679DF28D7A381001B8FFC /* AnimatedBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackView.swift; sourceTree = "<group>"; };
 		BFE679E128D7A6EE001B8FFC /* NewSpellAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpellAdd.swift; sourceTree = "<group>"; };
+		BFE679E328DB85A1001B8FFC /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				BFE679CB28CFBD9A001B8FFC /* Towns.swift */,
 				BFE679D128D24C3B001B8FFC /* Artifact.swift */,
 				BFE679D928D5E0FC001B8FFC /* Spell.swift */,
+				BFE679E328DB85A1001B8FFC /* Creature.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				BFE679B428CCF789001B8FFC /* HeroesList.swift in Sources */,
 				BFE679DA28D5E0FC001B8FFC /* Spell.swift in Sources */,
 				BFE679BA28CCF7F2001B8FFC /* Heroes.swift in Sources */,
+				BFE679E428DB85A1001B8FFC /* Creature.swift in Sources */,
 				BFE679C528CFB80F001B8FFC /* CategoriesList.swift in Sources */,
 				BFE6798528CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift in Sources */,
 				BFE679C328CFB618001B8FFC /* Category.swift in Sources */,
