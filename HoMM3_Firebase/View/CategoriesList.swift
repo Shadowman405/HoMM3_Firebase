@@ -49,8 +49,14 @@ struct CategoriesList: View {
                             } label: {
                                 Text("")
                             }
+                        } else if category.id == 2 {
+                            NavigationLink {
+                                CreaturesList(dataManager: _dataManager)
+                            } label: {
+                                Text("")
                         }
                     }
+                }
                 }
                 .navigationTitle("Heroes 3 Wiki")
             }
