@@ -11,6 +11,7 @@ struct CreaturesList: View {
     @EnvironmentObject var dataManager: DataManager
     @State private var searchText = ""
     @State private var showPopup = false
+    //var tintColor: UIColor = .brown
     
     var body: some View {
         List(dataManager.creatures, id: \.id) { creature in
@@ -22,10 +23,11 @@ struct CreaturesList: View {
 
                         
                         Image(creature.imgName)
-                            .clipShape(Circle().stroke(lineWidth: 80))
-                        .shadow(color: .orange, radius: 10)
+                            .clipShape(Circle())
+                            .shadow(color: .orange, radius: 7)                        
                     }
                     .frame(width: 50, height: 50)
+                    .padding()
                     
                     Text(creature.name)
                         .font(.title2)
