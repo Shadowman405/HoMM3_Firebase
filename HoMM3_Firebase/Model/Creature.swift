@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Creature: Hashable,Identifiable  {
+struct Creature: Identifiable  {
     var id: Int
-    var imgName: String
+    var imageName: String
     var name: String
     var attack: String
     var defence: String

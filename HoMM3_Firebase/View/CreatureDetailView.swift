@@ -17,7 +17,7 @@ struct CreatureDetailView: View {
             VStack {
                 HStack {
                     Spacer()
-                    Image(creature.imgName)
+                    Image(creature.imageName)
                         .resizable()
                         .clipShape(Circle())
                         .frame(width: 150, height: 150)
@@ -58,7 +58,7 @@ struct CreatureDetailView: View {
 
 struct CreatureDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CreatureDetailView(creature: Creature(id: 0, imgName: "Pikeman_portrait", name: "Pikeman", attack: "4", defence: "5", damage: "1-3", health: "10", speed: "4", level: "1", town: "Castle"))
+        CreatureDetailView(creature: Creature(id: 0, imageName: "Pikeman_portrait", name: "Pikeman", attack: "4", defence: "5", damage: "1-3", health: "10", speed: "4", level: "1", town: "Castle"))
             .environmentObject(DataManager())
     }
 }

@@ -239,9 +239,48 @@ class DataManager: ObservableObject {
                     let level = data["level"] as? String ?? ""
                     let town = data["town"] as? String ?? ""
                     
-                    let creature = Creature(id: id, imgName: imageName, name: name, attack: attack, defence: defence, damage: damage, health: health, speed: speed, level: level, town: town)
+                    let creature = Creature(id: id, imageName: imageName, name: name, attack: attack, defence: defence, damage: damage, health: health, speed: speed, level: level, town: town)
                     self.creatures.append(creature)
                 }
+            }
+        }
+    }
+
+//    func addCreature(id: Int, imageName: String, name: String, attack: String, defence: String, damage: String, health: String, speed: String, level: String, town: String) {
+//        let db = Firestore.firestore()
+//        let ref = db.collection("Creatures").document(name)
+//        ref.setData(["id": id,
+//                     "imageName": imageName,
+//                     "name": name,
+//                     "attack": attack,
+//                     "defence": defence,
+//                     "damage": damage,
+//                     "health": health,
+//                     "speed": speed,
+//                     "level": level,
+//                     "town": town
+//                    ]) { error in
+//            if let error = error {
+//                print(error.localizedDescription)
+//            }
+//        }
+//    }
+    
+    func addCreature(id: Int, imageName: String, name: String, attack: String, defense: String, damage: String, health: String, speed: String, level: String, town: String) {
+        let db = Firestore.firestore()
+        let ref = db.collection("Creatures").document(name)
+        ref.setData(["id": id,
+                     "imageName": imageName,
+                     "name": name,
+                     "attack": attack,
+                     "defence": defense,
+                     "health": health,
+                     "speed": speed,
+                     "level": level,
+                     "town": town
+                    ]) { error in
+            if let error = error {
+                print(error.localizedDescription)
             }
         }
     }

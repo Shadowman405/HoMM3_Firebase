@@ -22,7 +22,7 @@ struct CreaturesList: View {
                         Circle().foregroundColor(.indigo)
 
                         
-                        Image(creature.imgName)
+                        Image(creature.imageName)
                             .clipShape(Circle())
                             .shadow(color: .orange, radius: 7)                        
                     }
@@ -42,6 +42,14 @@ struct CreaturesList: View {
         }
         .navigationTitle("Creatures")
         .searchable(text: $searchText)
+        .navigationBarItems(trailing: Button(action: {
+            showPopup.toggle()
+        }, label: {
+            Image(systemName: "plus")
+        }))
+        .sheet(isPresented: $showPopup) {
+            NewCreatureAdd()
+        }
     }
 }
 
