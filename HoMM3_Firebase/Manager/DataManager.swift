@@ -14,6 +14,7 @@ class DataManager: ObservableObject {
     @Published var towns: [Town] = []
     @Published var artifacts: [Artifact] = []
     @Published var spells: [Spell] = []
+    @Published var creatures: [Creature] = []
     
     init(){
         //fetchHeroes()
@@ -211,5 +212,39 @@ class DataManager: ObservableObject {
         }
     }
 
+// MARK: - Creature
+    
+    func fetchCreatures() {
+        spells.removeAll()
+        let db = Firestore.firestore()
+        let ref = db.collection("Creatures")
+        ref.getDocuments { snapshot, error in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return
+            }
+            if let snapshot = snapshot {
+                for document in snapshot.documents {
+                    let data = document.data()
+                    
+                    let id = data["id"] as? Int ?? 0
+                    let imageName = data["imageName"] as? String ?? ""
+                    let name = data["name"] as? String ?? ""
+                    let attack = data["attack"] as? String ?? ""
+                    let defence = data["defence"] as? String ?? ""
+                    let damage = data["damage"] as? String ?? ""
+                    let health = data["health"] as? String ?? ""
+                    let speed = data["speed"] as? String ?? ""
+                    let level = data["level"] as? String ?? ""
+                    let town = data["town"] as? String ?? ""
+                    
+                    let creature = Creature(id: id, imgName: imageName, name: name, attack: attack, defence: defence, damage: damage, health: health, speed: speed, level: level, town: town)
+                    self.creatures.append(creature)
+                }
+            }
+        }
+    }
+
+    
 }
 

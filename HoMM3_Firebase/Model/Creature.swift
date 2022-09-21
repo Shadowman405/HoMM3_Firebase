@@ -16,4 +16,6 @@ struct Creature: Hashable,Identifiable  {
     var damage: String
     var health: String
     var speed: String
+    var level: String
+    var town: String
 }
