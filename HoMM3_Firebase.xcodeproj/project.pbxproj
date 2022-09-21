@@ -39,6 +39,7 @@
 		BFE679E028D7A381001B8FFC /* AnimatedBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679DF28D7A381001B8FFC /* AnimatedBackView.swift */; };
 		BFE679E228D7A6EE001B8FFC /* NewSpellAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679E128D7A6EE001B8FFC /* NewSpellAdd.swift */; };
 		BFE679E428DB85A1001B8FFC /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679E328DB85A1001B8FFC /* Creature.swift */; };
+		BFE679E828DB8831001B8FFC /* CreaturesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679E728DB8831001B8FFC /* CreaturesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		BFE679DF28D7A381001B8FFC /* AnimatedBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackView.swift; sourceTree = "<group>"; };
 		BFE679E128D7A6EE001B8FFC /* NewSpellAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpellAdd.swift; sourceTree = "<group>"; };
 		BFE679E328DB85A1001B8FFC /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
+		BFE679E728DB8831001B8FFC /* CreaturesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 				BFE679DD28D5E932001B8FFC /* SpellDetailView.swift */,
 				BFE679DF28D7A381001B8FFC /* AnimatedBackView.swift */,
 				BFE679E128D7A6EE001B8FFC /* NewSpellAdd.swift */,
+				BFE679E728DB8831001B8FFC /* CreaturesList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				BFE679C128CD10BC001B8FFC /* HeroDetailView.swift in Sources */,
 				BFE679DE28D5E932001B8FFC /* SpellDetailView.swift in Sources */,
 				BFE679DC28D5E236001B8FFC /* SpellsList.swift in Sources */,
+				BFE679E828DB8831001B8FFC /* CreaturesList.swift in Sources */,
 				BFE679BE28CD08B5001B8FFC /* NewHeroAdd.swift in Sources */,
 				BFE679B428CCF789001B8FFC /* HeroesList.swift in Sources */,
 				BFE679DA28D5E0FC001B8FFC /* Spell.swift in Sources */,
