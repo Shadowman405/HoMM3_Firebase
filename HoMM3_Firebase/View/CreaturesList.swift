@@ -33,11 +33,11 @@ struct CreaturesList: View {
                         .font(.title2)
                 }
             
-//            NavigationLink {
-//                ArtifactDetailsView(artifact: artifact)
-//            } label: {
-//                Text("")
-//                }
+            NavigationLink {
+                CreatureDetailView(creature: creature)
+            } label: {
+                Text("")
+                }
             }
         }
         .navigationTitle("Creatures")

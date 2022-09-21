@@ -40,6 +40,7 @@
 		BFE679E228D7A6EE001B8FFC /* NewSpellAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679E128D7A6EE001B8FFC /* NewSpellAdd.swift */; };
 		BFE679E428DB85A1001B8FFC /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679E328DB85A1001B8FFC /* Creature.swift */; };
 		BFE679E828DB8831001B8FFC /* CreaturesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679E728DB8831001B8FFC /* CreaturesList.swift */; };
+		BFE679EA28DB8C76001B8FFC /* CreatureDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE679E928DB8C76001B8FFC /* CreatureDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		BFE679E128D7A6EE001B8FFC /* NewSpellAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpellAdd.swift; sourceTree = "<group>"; };
 		BFE679E328DB85A1001B8FFC /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 		BFE679E728DB8831001B8FFC /* CreaturesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesList.swift; sourceTree = "<group>"; };
+		BFE679E928DB8C76001B8FFC /* CreatureDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				BFE679DF28D7A381001B8FFC /* AnimatedBackView.swift */,
 				BFE679E128D7A6EE001B8FFC /* NewSpellAdd.swift */,
 				BFE679E728DB8831001B8FFC /* CreaturesList.swift */,
+				BFE679E928DB8C76001B8FFC /* CreatureDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				BFE679E028D7A381001B8FFC /* AnimatedBackView.swift in Sources */,
 				BFE679D428D24C82001B8FFC /* ArtifactsList.swift in Sources */,
 				BFE679E228D7A6EE001B8FFC /* NewSpellAdd.swift in Sources */,
+				BFE679EA28DB8C76001B8FFC /* CreatureDetailView.swift in Sources */,
 				BFE679CE28CFBF5B001B8FFC /* TownsGrid.swift in Sources */,
 				BFE679D828D25521001B8FFC /* NewArtifactAdd.swift in Sources */,
 			);
