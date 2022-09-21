@@ -22,6 +22,7 @@ class DataManager: ObservableObject {
         fetchTowns()
         fetchSpells()
         fetchArtifacts()
+        fetchCreatures()
     }
     
     
