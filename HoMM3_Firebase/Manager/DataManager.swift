@@ -274,6 +274,7 @@ class DataManager: ObservableObject {
                      "name": name,
                      "attack": attack,
                      "defence": defense,
+                     "damage": damage,
                      "health": health,
                      "speed": speed,
                      "level": level,
