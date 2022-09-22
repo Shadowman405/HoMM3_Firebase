@@ -19,7 +19,7 @@ struct CreaturesList: View {
             ZStack(alignment: .leading) {
                 HStack {
                     ZStack {
-                        Circle().foregroundColor(.indigo)
+                        //Circle().foregroundColor(.indigo)
 
                         
                         Image(creature.imageName)
