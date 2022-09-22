@@ -18,9 +18,7 @@ struct CreatureDetailView: View {
                 HStack {
                     Spacer()
                     Image(creature.imageName)
-                        .resizable()
-                        .clipShape(Circle())
-                        .frame(width: 80, height: 80)
+                        .frame(width: 120, height:120)
                         .shadow(color: .orange, radius: 9)
                         .padding()
                     Spacer()
