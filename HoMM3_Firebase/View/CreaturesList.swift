@@ -19,18 +19,13 @@ struct CreaturesList: View {
             ZStack(alignment: .leading) {
                 HStack {
                     ZStack {
-                        //Circle().foregroundColor(.indigo)
-
-                        
                         Image(creature.imageName)
-                            .clipShape(Circle())
-                            .shadow(color: .orange, radius: 7)                        
+                            .shadow(color: .orange, radius: 7)
                     }
-                    .frame(width: 50, height: 50)
                     .padding()
                     
                     Text(creature.name)
-                        .font(.title2)
+                        .font(.title3)
                 }
             
             NavigationLink {

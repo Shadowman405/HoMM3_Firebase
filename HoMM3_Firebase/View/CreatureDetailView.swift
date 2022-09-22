@@ -20,7 +20,7 @@ struct CreatureDetailView: View {
                     Image(creature.imageName)
                         .resizable()
                         .clipShape(Circle())
-                        .frame(width: 150, height: 150)
+                        .frame(width: 80, height: 80)
                         .shadow(color: .orange, radius: 9)
                         .padding()
                     Spacer()
