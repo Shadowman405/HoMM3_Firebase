@@ -40,7 +40,8 @@ struct CreaturesList: View {
             }
         }
         
-        List(dataManager.creatures, id: \.id) { creature in
+        List() {
+            ForEach(searchResults) { creature in
             
             ZStack(alignment: .leading) {
                 HStack {
@@ -71,6 +72,50 @@ struct CreaturesList: View {
             NewCreatureAdd()
         }
     }
+    }
+    
+    var searchResults: [Creature] {
+        if selectedTown == 0 {
+            return dataManager.creatures.filter{
+                $0.town == "Castle"
+            }
+        } else if selectedTown == 1 {
+            return dataManager.creatures.filter {
+                $0.town == "Rampart"
+            }
+        } else if selectedTown == 2{
+            return dataManager.creatures.filter {
+                $0.town == "Tower"
+            }
+        } else if selectedTown == 3 {
+            return dataManager.creatures.filter {
+                $0.town == "Inferno"
+            }
+        } else if selectedTown == 4 {
+            return dataManager.creatures.filter{
+                $0.town == "Necropolis"
+            }
+        }
+        else if selectedTown == 5 {
+            return dataManager.creatures.filter {
+                $0.town == "Dungeon"
+            }
+        } else if selectedTown == 6 {
+            return dataManager.creatures.filter{
+                $0.town == "Citadel"
+            }
+        } else if selectedTown == 7 {
+            return dataManager.creatures.filter{
+                $0.town == "Fortress"
+            }
+        } else if selectedTown == 8 {
+            return dataManager.creatures.filter{
+                $0.town == "Conflux"
+            }
+        } else {
+            return dataManager.creatures
+        }
+     }
 }
 
 struct CreaturesList_Previews: PreviewProvider {
