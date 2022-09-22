@@ -55,7 +55,7 @@ struct CreaturesList: View {
                         .font(.title3)
                 }
             
-            NavigationLink {
+            NavigationLink() {
                 CreatureDetailView(creature: creature)
             } label: {
                 Text("")
