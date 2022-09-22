@@ -9,11 +9,37 @@ import SwiftUI
 
 struct CreaturesList: View {
     @EnvironmentObject var dataManager: DataManager
-    @State private var searchText = ""
     @State private var showPopup = false
-    //var tintColor: UIColor = .brown
+    @State var selectedTown = 0
+    let towns = ["Castle", "Rampart", "Tower", "Inferno", "Necropolis", "Dungeon", "Citadel", "Fortress", "Conflux"]
     
     var body: some View {
+        Text("Select Creature Town")
+            .font(.title3)
+        Picker("Choose Magic School",selection: $selectedTown) {
+            ForEach(0..<towns.count){ town in
+                if town == 0 {
+                    Text("Castle")
+                } else if town == 1 {
+                    Text("Rampart")
+                } else if town == 2 {
+                    Text("Tower")
+                } else if town == 3 {
+                    Text("Inferno")
+                } else if town == 4 {
+                    Text("Necropolis")
+                } else if town == 5 {
+                    Text("Dungeon")
+                } else if town == 6 {
+                    Text("Citadel")
+                } else if town == 7 {
+                    Text("Fortress")
+                } else if town == 8 {
+                    Text("Conflux")
+                }
+            }
+        }
+        
         List(dataManager.creatures, id: \.id) { creature in
             
             ZStack(alignment: .leading) {
@@ -36,7 +62,6 @@ struct CreaturesList: View {
             }
         }
         .navigationTitle("Creatures")
-        .searchable(text: $searchText)
         .navigationBarItems(trailing: Button(action: {
             showPopup.toggle()
         }, label: {
