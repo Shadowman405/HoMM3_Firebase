@@ -13,43 +13,50 @@ struct CreatureDetailView: View {
     var creature: Creature
     
     var body: some View {
-        ScrollView {
-            VStack {
-                HStack {
-                    Spacer()
-                    Image(creature.imageName)
-                        .frame(width: 120, height:120)
-                        .shadow(color: .orange, radius: 9)
-                        .padding()
-                    Spacer()
-                }
-                HStack {
-                    VStack(alignment: .leading) {
-                        VStack(alignment: .center) {
-                            Text("Hometown : " + creature.town)
-                                .font(.title2)
-                            Text("Level : " + creature.level)
-                                .font(.title2)
-                        }
-                        .padding()
-                        
-                        VStack(alignment: .leading) {
-                            Text("Creature stats")
-                                .font(.title2)
-                            Text("Attack : " + creature.attack)
-                            Text("Defense : " + (creature.defence))
-                            Text("Damage : " + (creature.damage))
-                            Text("Speed : " + (creature.speed))
-
-                        }
-                        .padding()
+        ZStack {
+            AnimatedBackView()
+                .edgesIgnoringSafeArea(.all)
+            
+            ScrollView {
+                VStack {
+                    HStack {
+                        Spacer()
+                        Image(creature.imageName)
+                        //.resizable()
+                            //.clipShape(Circle())
+                            .frame(width: 120, height:120)
+                            .shadow(color: .orange, radius: 9)
+                            .padding()
+                        Spacer()
                     }
+                    HStack {
+                        VStack(alignment: .leading) {
+                            VStack(alignment: .center) {
+                                Text("Hometown : " + creature.town)
+                                    .font(.title2)
+                                Text("Level : " + creature.level)
+                                    .font(.title2)
+                            }
+                            .padding()
+                            
+                            VStack(alignment: .leading) {
+                                Text("Creature stats")
+                                    .font(.title2)
+                                Text("Attack : " + creature.attack)
+                                Text("Defense : " + (creature.defence))
+                                Text("Damage : " + (creature.damage))
+                                Text("Speed : " + (creature.speed))
+
+                            }
+                            .padding()
+                        }
+                        Spacer()
+                    }
+
                     Spacer()
                 }
-
-                Spacer()
+                .navigationTitle(creature.name)
             }
-            .navigationTitle(creature.name)
         }
     }
 }
