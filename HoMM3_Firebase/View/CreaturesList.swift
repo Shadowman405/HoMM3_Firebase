@@ -40,8 +40,8 @@ struct CreaturesList: View {
             }
         }
         
-        List() {
-            ForEach(searchResults) { creature in
+        List(searchResults, id: \.id) {
+            creature in
             
             ZStack(alignment: .leading) {
                 HStack {
@@ -71,7 +71,6 @@ struct CreaturesList: View {
         .sheet(isPresented: $showPopup) {
             NewCreatureAdd()
         }
-    }
     }
     
     var searchResults: [Creature] {
