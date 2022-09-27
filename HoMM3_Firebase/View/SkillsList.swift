@@ -14,16 +14,23 @@ struct SkillsList: View {
     
     var body: some View {
         List(dataManager.skills, id: \.id) { skill in
-            HStack {
-                Image(skill.imageName)
-                    .clipShape(Circle())
-                    .padding()
+            ZStack(alignment: .leading) {
+                HStack() {
+                    Image(skill.imageName)
+                        .clipShape(Circle())
+                    
+                    Text(skill.name)
+                        .font(.title2)
+                }
                 
-                Text(skill.name)
-                    .font(.title2)
+                NavigationLink() {
+                    SkillDetailView()
+                } label: {
+                    Text("")
+                    }
+                }
             }
         }
-    }
 }
 
 struct SkillsList_Previews: PreviewProvider {
