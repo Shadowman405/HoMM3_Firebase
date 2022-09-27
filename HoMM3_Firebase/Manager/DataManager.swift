@@ -15,6 +15,7 @@ class DataManager: ObservableObject {
     @Published var artifacts: [Artifact] = []
     @Published var spells: [Spell] = []
     @Published var creatures: [Creature] = []
+    @Published var skills: [Skill] = []
     
     init(){
         //fetchHeroes()
@@ -266,6 +267,38 @@ class DataManager: ObservableObject {
         }
     }
 
+    // MARK: - Skills
+    
+    func fetchSkills() {
+        spells.removeAll()
+        let db = Firestore.firestore()
+        let ref = db.collection("Skills")
+        ref.getDocuments { snapshot, error in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return
+            }
+            if let snapshot = snapshot {
+                for document in snapshot.documents {
+                    let data = document.data()
+                    
+                    let id = data["id"] as? Int ?? 0
+                    let imageName = data["imageName"] as? String ?? ""
+                    let name = data["name"] as? String ?? ""
+                    let description = data["description"] as? String ?? ""
+                    let basic = data["basic"] as? String ?? ""
+                    let advanced = data["advanced"] as? String ?? ""
+                    let expert = data["expert"] as? String ?? ""
+                    
+                    let skill = Skill(id: id, imageName: imageName, name: name, description: description, basic: basic, advanced: advanced, expert: expert)
+                    self.skills.append(skill)
+                }
+            }
+        }
+    }
+
+    
+    
     
 }
 
