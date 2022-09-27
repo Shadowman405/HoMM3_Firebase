@@ -24,6 +24,7 @@ class DataManager: ObservableObject {
         fetchSpells()
         fetchArtifacts()
         fetchCreatures()
+        fetchSkills()
     }
     
     

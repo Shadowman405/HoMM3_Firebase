@@ -57,7 +57,7 @@ struct CategoriesList: View {
                         }
                         } else if category.id == 5 {
                             NavigationLink {
-                                SkillsList()
+                                SkillsList(dataManager: _dataManager)
                             } label: {
                                 Text("")
                         }

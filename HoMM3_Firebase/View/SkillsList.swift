@@ -14,7 +14,14 @@ struct SkillsList: View {
     
     var body: some View {
         List(dataManager.skills, id: \.id) { skill in
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            HStack {
+                Image(skill.imageName)
+                    .clipShape(Circle())
+                    .padding()
+                
+                Text(skill.name)
+                    .font(.title2)
+            }
         }
     }
 }
