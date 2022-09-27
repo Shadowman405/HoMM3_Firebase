@@ -55,8 +55,14 @@ struct CategoriesList: View {
                             } label: {
                                 Text("")
                         }
+                        } else if category.id == 5 {
+                            NavigationLink {
+                                SkillsList()
+                            } label: {
+                                Text("")
+                        }
                     }
-                }
+                    }
                 }
                 .navigationTitle("Heroes 3 Wiki")
             }

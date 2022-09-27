@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF261FF228E37A3D008C7C79 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF261FF128E37A3D008C7C79 /* Skill.swift */; };
+		BF261FF428E37ACF008C7C79 /* SkillsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF261FF328E37ACF008C7C79 /* SkillsList.swift */; };
 		BFE6798528CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6798428CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift */; };
 		BFE6798728CCF5D3001B8FFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6798628CCF5D3001B8FFC /* ContentView.swift */; };
 		BFE6798928CCF5D5001B8FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE6798828CCF5D5001B8FFC /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		BF261FF128E37A3D008C7C79 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		BF261FF328E37ACF008C7C79 /* SkillsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsList.swift; sourceTree = "<group>"; };
 		BFE6798128CCF5D3001B8FFC /* HoMM3_Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoMM3_Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE6798428CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoMM3_FirebaseApp.swift; sourceTree = "<group>"; };
 		BFE6798628CCF5D3001B8FFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				BFE679E728DB8831001B8FFC /* CreaturesList.swift */,
 				BFE679E928DB8C76001B8FFC /* CreatureDetailView.swift */,
 				BFE679EB28DB9023001B8FFC /* NewCreatureAdd.swift */,
+				BF261FF328E37ACF008C7C79 /* SkillsList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				BFE679E428DB85A1001B8FFC /* Creature.swift in Sources */,
 				BFE679C528CFB80F001B8FFC /* CategoriesList.swift in Sources */,
 				BFE6798528CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift in Sources */,
+				BF261FF428E37ACF008C7C79 /* SkillsList.swift in Sources */,
 				BFE679C328CFB618001B8FFC /* Category.swift in Sources */,
 				BFE679D028CFBFCA001B8FFC /* TownCell.swift in Sources */,
 				BFE679C728CFBBA6001B8FFC /* VideoPlayerView.swift in Sources */,
