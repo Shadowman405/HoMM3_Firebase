@@ -18,13 +18,14 @@ struct SkillsList: View {
                 HStack() {
                     Image(skill.imageName)
                         .clipShape(Circle())
+                        .shadow(color: .orange, radius: 7)
                     
                     Text(skill.name)
                         .font(.title2)
                 }
                 
                 NavigationLink() {
-                    SkillDetailView()
+                    SkillDetailView(skill: skill)
                 } label: {
                     Text("")
                     }

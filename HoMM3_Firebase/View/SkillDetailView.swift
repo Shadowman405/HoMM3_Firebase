@@ -8,13 +8,42 @@
 import SwiftUI
 
 struct SkillDetailView: View {
+    var skill: Skill
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack {
+                Image(skill.imageName)
+                    .clipShape(Circle())
+                    .shadow(color: .orange, radius: 10)
+                
+                //Text(skill.name)
+                    //.font(.title)
+                Text("Basic: - ")
+                    .font(.title2)
+                Text(skill.basic)
+                    .padding()
+                Text("Advanced: - ")
+                    .font(.title2)
+                Text(skill.advanced)
+                    .padding()
+                Text("Expert: - ")
+                    .font(.title2)
+                Text(skill.expert)
+                    .padding()
+                
+                Text("Description: - ")
+                    .font(.title2)
+                Text(skill.description)
+                    .padding()
+            }
+            .navigationTitle(skill.name)
+        }
     }
 }
 
 struct SkillDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        SkillDetailView()
+        SkillDetailView(skill: Skill(id: 0, imageName: "", name: "", description: "", basic: "", advanced: "", expert: ""))
     }
 }
