@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF261FF228E37A3D008C7C79 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF261FF128E37A3D008C7C79 /* Skill.swift */; };
 		BFE6798528CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6798428CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift */; };
 		BFE6798728CCF5D3001B8FFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6798628CCF5D3001B8FFC /* ContentView.swift */; };
 		BFE6798928CCF5D5001B8FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE6798828CCF5D5001B8FFC /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF261FF128E37A3D008C7C79 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		BFE6798128CCF5D3001B8FFC /* HoMM3_Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoMM3_Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE6798428CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoMM3_FirebaseApp.swift; sourceTree = "<group>"; };
 		BFE6798628CCF5D3001B8FFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				BFE679D128D24C3B001B8FFC /* Artifact.swift */,
 				BFE679D928D5E0FC001B8FFC /* Spell.swift */,
 				BFE679E328DB85A1001B8FFC /* Creature.swift */,
+				BF261FF128E37A3D008C7C79 /* Skill.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				BFE679BE28CD08B5001B8FFC /* NewHeroAdd.swift in Sources */,
 				BFE679B428CCF789001B8FFC /* HeroesList.swift in Sources */,
 				BFE679DA28D5E0FC001B8FFC /* Spell.swift in Sources */,
+				BF261FF228E37A3D008C7C79 /* Skill.swift in Sources */,
 				BFE679BA28CCF7F2001B8FFC /* Heroes.swift in Sources */,
 				BFE679E428DB85A1001B8FFC /* Creature.swift in Sources */,
 				BFE679C528CFB80F001B8FFC /* CategoriesList.swift in Sources */,
