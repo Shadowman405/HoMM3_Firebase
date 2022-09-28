@@ -31,6 +31,16 @@ struct SkillsList: View {
                     }
                 }
             }
+            .navigationTitle("Secondary Skills")
+            .searchable(text: $searchText)
+            .navigationBarItems(trailing: Button(action:    {
+                showPopup.toggle()
+            }, label: {
+                Image(systemName: "plus")
+            }))
+            .sheet(isPresented: $showPopup) {
+                NewArtifactAdd()
+        }
         }
 }
 
