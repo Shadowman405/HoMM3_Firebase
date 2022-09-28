@@ -10,6 +10,7 @@
 		BF261FF228E37A3D008C7C79 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF261FF128E37A3D008C7C79 /* Skill.swift */; };
 		BF261FF428E37ACF008C7C79 /* SkillsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF261FF328E37ACF008C7C79 /* SkillsList.swift */; };
 		BF261FF628E37F8C008C7C79 /* SkillDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF261FF528E37F8C008C7C79 /* SkillDetailView.swift */; };
+		BF261FF828E4D57F008C7C79 /* SkillAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF261FF728E4D57F008C7C79 /* SkillAdd.swift */; };
 		BFE6798528CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6798428CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift */; };
 		BFE6798728CCF5D3001B8FFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6798628CCF5D3001B8FFC /* ContentView.swift */; };
 		BFE6798928CCF5D5001B8FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE6798828CCF5D5001B8FFC /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		BF261FF128E37A3D008C7C79 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		BF261FF328E37ACF008C7C79 /* SkillsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsList.swift; sourceTree = "<group>"; };
 		BF261FF528E37F8C008C7C79 /* SkillDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDetailView.swift; sourceTree = "<group>"; };
+		BF261FF728E4D57F008C7C79 /* SkillAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillAdd.swift; sourceTree = "<group>"; };
 		BFE6798128CCF5D3001B8FFC /* HoMM3_Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoMM3_Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE6798428CCF5D3001B8FFC /* HoMM3_FirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoMM3_FirebaseApp.swift; sourceTree = "<group>"; };
 		BFE6798628CCF5D3001B8FFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				BFE679EB28DB9023001B8FFC /* NewCreatureAdd.swift */,
 				BF261FF328E37ACF008C7C79 /* SkillsList.swift */,
 				BF261FF528E37F8C008C7C79 /* SkillDetailView.swift */,
+				BF261FF728E4D57F008C7C79 /* SkillAdd.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				BFE679E228D7A6EE001B8FFC /* NewSpellAdd.swift in Sources */,
 				BFE679EA28DB8C76001B8FFC /* CreatureDetailView.swift in Sources */,
 				BFE679CE28CFBF5B001B8FFC /* TownsGrid.swift in Sources */,
+				BF261FF828E4D57F008C7C79 /* SkillAdd.swift in Sources */,
 				BFE679D828D25521001B8FFC /* NewArtifactAdd.swift in Sources */,
 				BFE679EC28DB9024001B8FFC /* NewCreatureAdd.swift in Sources */,
 			);
