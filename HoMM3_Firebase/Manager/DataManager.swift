@@ -298,7 +298,22 @@ class DataManager: ObservableObject {
         }
     }
 
-    
+    func addSkill(id: Int, imageName: String, name: String, description: String, basic: String, advanced: String, expert: String) {
+        let db = Firestore.firestore()
+        let ref = db.collection("Creatures").document(name)
+        ref.setData(["id": id,
+                     "imageName": imageName,
+                     "name": name,
+                     "description": description,
+                     "basic": basic,
+                     "advanced": advanced,
+                     "expert": expert
+                    ]) { error in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+    }
     
     
 }

@@ -35,7 +35,7 @@ struct SkillAdd: View {
                 .padding()
             
             Button {
-                dataManager.addSkill()
+                dataManager.addSkill(id: Int(id) ?? 0, imageName: imageName, name: name, description: description, basic: basic, advanced: advanced, expert: expert)
             } label: {
                 Text("Save")
             }
