@@ -39,7 +39,7 @@ struct SkillsList: View {
                 Image(systemName: "plus")
             }))
             .sheet(isPresented: $showPopup) {
-                NewArtifactAdd()
+                SkillAdd()
         }
         }
 }
