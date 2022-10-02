@@ -12,7 +12,6 @@ struct HeroesList: View {
     @State private var showPopup = false
     
     var body: some View {
-        NavigationView {
             List(dataManager.heroes, id: \.id) { hero in
                 ZStack {
                     HStack {
@@ -39,9 +38,8 @@ struct HeroesList: View {
             .sheet(isPresented: $showPopup) {
                 NewHeroAdd()
             }
-        }
-        .onAppear{
-            dataManager.fetchHeroes()
+                .onAppear{
+                dataManager.fetchHeroes()
         }
     }
 }
