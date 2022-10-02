@@ -13,9 +13,11 @@ struct SkillDetailView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Image(skill.imageName)
-                    .clipShape(Circle())
+                VStack {
+                    Image(skill.imageName)
                     .shadow(color: .orange, radius: 10)
+                }
+                .clipShape(Circle())
                 
                 //Text(skill.name)
                     //.font(.title)
