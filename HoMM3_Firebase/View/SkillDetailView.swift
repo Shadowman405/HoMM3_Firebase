@@ -19,8 +19,6 @@ struct SkillDetailView: View {
                 }
                 .clipShape(Circle())
                 
-                //Text(skill.name)
-                    //.font(.title)
                 Text("Basic: ")
                     .font(.title2)
                 Text(skill.basic)
